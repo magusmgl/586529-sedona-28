@@ -12,17 +12,17 @@
       <nav class="main_header">
         <a class="logo" href="index.html"><img src="img/logo.png" width="138" height="70"  alt="City of Sedona"></a>
         <ul>
-          <li class="information"><a href="">Информация</a></li>
-          <li class="gallery"><a href="">Фото и видео</a></li>
-          <li class="maps"><a href="">Карта штата</a></li>
+          <li class="information"><a href="#">Информация</a></li>
+          <li class="gallery"><a href="#">Фото и видео</a></li>
+          <li class="maps"><a href="#">Карта штата</a></li>
           <li class="hotels"><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <h1 class="hidden">Добро пожаловать в Джорждию!</h1>
+      <h1 class="visually-hidden">Добро пожаловать в Джорждию!</h1>
       <section  class='advertisement'>
-        <h2>Рекламный блок</h2>
+        <h2 class="visually-hidden">Рекламный блок</h2>
         <p class="slogan">Седона — небольшой городок в Аризоне,  <br> заслуживающий большего! </p>
         <ul>
           <li>
@@ -70,29 +70,48 @@
         </ul>
       </section>
       <section class="booking">
-        <h2>Бронирование жилья</h2>
+        <h2 class="visually-hidden">Бронирование жилья</h2>
         <p>Заинтересовались?  </p>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне  </p>
-        <button>Поиск гостиницы в Седоне</button>
+        <button type="button">Поиск гостиницы в Седоне</button>
+        <form class="visually_hidden" action="https://echo.htmlacademy.ru" method="get">
+          <p>
+            <label for="date_arrival">Дата заезда:</label>
+            <input id="date_arrival" type="text" name="date_in" placeholder="24 апреля 2017">
+          </p>
+          <p>
+            <label for="date_depature">Дата выезда:</label>
+            <input id="date_depature" type="text" name="date_out" placeholder="4 июля 2017">
+          </p>
+          <p>
+            <label for="number_adults">Взрослые:</label>
+            <input id="number_adults" type="text" name="adults" placeholder="2">
+          </p>
+          <p>
+            <label for="number_child">Дети:</label>
+            <input id="number_child" type="text" name="child" placeholder="0">
+          </p>
+          <button type="submit">Найти</button>
+        </form>
         <img src="img/map.jpg"  width="1199" height="594" alt="Карта с месторасположением городка Седона">
       </section>
     </main>
     <footer class="main_footer">
-      <section> class="contacts">
-        <h2 class="hidden">Наши контакты</h2>
+      <section class="contacts">
+        <h2 class="visually-hidden">Наши контакты</h2>
         <p class="hashtag">#visitSEDONA</p>
         <p class= "phone">ТЕЛ: +7(495) 666-01-66</p>
       </section>
       <section class="social_network">
-        <h2 class="hidden">Мы в социальных сетях</h2>
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="socials">
-          <li class="twitter_icon"><a>Twitter</a></li>
-          <li class="Facabook_icon"><a>Facabook</a></li>
-          <li class="youtube_icon"><a>YouTube</a></li>
+          <li class="twitter_icon"><a href="#">Twitter</a></li>
+          <li class="Facabook_icon"><a href="#">Facabook</a></li>
+          <li class="youtube_icon"><a href="#">YouTube</a></li>
         </ul>
       </section>
       <section class="copyright">
-        <h2 class="hidden">Копирайт</h2>
+        <h2 class="visually-hidden">Копирайт</h2>
         <p class="developer">Website by</p>
         <a class="link" href="https://htmlacademy.ru/intensive/htmlcss">HTML academy</a>
       </section>
